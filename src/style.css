@@ -1,0 +1,36 @@
+/* Global layout styles to ensure footer is visible */
+:root {
+	--header-height: auto;
+	--footer-height: auto;
+}
+
+html, body, #app {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background: radial-gradient(circle at 10% 10%, #0f1724 0%, #0b1220 60%);
+	color: #fff;
+}
+
+.app-container {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.app-main {
+	flex: 1 0 auto;
+	padding: 2rem;
+}
+
+/* Ensure footer sits at bottom */
+footer, .simple-footer {
+	flex-shrink: 0;
+}
+
+/* small helper to center page content */
+.container-center {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
