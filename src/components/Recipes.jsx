@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+ import React, { Component } from "react";
 import "./recipes.css";
 
 // Extended recipe data with detailed information
@@ -1111,18 +1111,6 @@ export default class Recipes extends Component {
     this.setState({ modalActiveTab: tab });
   };
 
-  handleShareRecipe = (recipe) => {
-    const shareText = `Check out this amazing recipe: ${recipe.name} - ${recipe.description}`;
-    if (navigator.share) {
-      navigator.share({
-        title: recipe.name,
-        text: shareText,
-      });
-    } else {
-      alert("Share: " + shareText);
-    }
-  };
-
   render() {
     const {
       selectedCategory,
@@ -1166,10 +1154,10 @@ export default class Recipes extends Component {
             >
               <span className="recipe-category-icon">{category.icon}</span>
               <span className="recipe-category-name">{category.name}</span>
-              <span className="category-count">
-                {recipeData[category.name]?.length || 0}
-              </span>
+
+               
             </div>
+
           ))}
         </div>
 

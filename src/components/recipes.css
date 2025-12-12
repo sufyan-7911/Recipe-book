@@ -692,3 +692,69 @@
     grid-template-columns: 1fr;
   }
 }
+/* recipes.css में बस category hover animation बदलें */
+
+.recipe-category-item {
+  /* Previous styles remain same */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+  min-width: 120px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  position: relative;
+  overflow: hidden;
+}
+
+/* NEW ANIMATION: Color flows from top to bottom on hover */
+.recipe-category-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 0;
+  background: var(--category-color);
+  transition: height 0.3s ease;
+  z-index: 0;
+}
+
+.recipe-category-item:hover::before {
+  height: 100%;
+}
+
+.recipe-category-item > * {
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+.recipe-category-item:hover > * {
+  color: white;
+  transform: translateY(-2px);
+}
+
+.recipe-category-item:hover .recipe-category-icon {
+  transform: scale(1.2) translateY(-2px);
+}
+
+.recipe-category-item.active {
+  background: var(--category-color);
+  color: white;
+  transform: scale(1.05);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+}
+
+/* Count badge style on hover */
+.recipe-category-item:hover .category-count {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.recipe-category-item.active .category-count {
+  background: rgba(255, 255, 255, 0.3);
+}

@@ -47,6 +47,9 @@ export default class Contact extends Component {
             <p>sb07911786@gmail.com.com</p>
           </div>
         </div>
+        <br />
+        <br />
+        <br />
 
         <form onSubmit={this.handleSubmit}>
           <div className="form-group">
