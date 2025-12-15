@@ -37,7 +37,7 @@ const recipeData = {
       calories: 350,
       cookTime: "45 minutes",
       prepTime: "15 minutes",
-      author: "Chef Sarah",
+       author: "Chef Sufyan",
     },
     {
       id: 2,
@@ -70,7 +70,7 @@ const recipeData = {
       calories: 280,
       cookTime: "15 minutes",
       prepTime: "15 minutes",
-      author: "Chef Raj",
+      author: "Chef Sufyan",
     },
     {
       id: 3,
@@ -105,7 +105,7 @@ const recipeData = {
       calories: 320,
       cookTime: "20 minutes",
       prepTime: "20 minutes",
-      author: "Chef Priya",
+      author: "Chef Sufyan",
     },
     {
       id: 4,
@@ -137,7 +137,7 @@ const recipeData = {
       calories: 280,
       cookTime: "25 minutes",
       prepTime: "10 minutes",
-      author: "Chef Anil",
+      author: "Chef Sufyan",
     },
     {
     id: 5,
@@ -168,7 +168,7 @@ const recipeData = {
     calories: 270,
     cookTime: "20 minutes",
     prepTime: "10 minutes",
-    author: "Chef Meera"
+    author: "Chef Sufyan"
   },
   {
     id: 6,
@@ -198,7 +198,7 @@ const recipeData = {
     calories: 300,
     cookTime: "30 minutes",
     prepTime: "10 minutes",
-    author: "Chef Ravi"
+    author: "Chef Sufyan"
   }
   ],
   "Non-Veg": [
@@ -233,7 +233,7 @@ const recipeData = {
     calories: 450,
     cookTime: "40 minutes",
     prepTime: "20 minutes",
-    author: "Chef Ali"
+    author: "Chef Sufyan"
   },
   {
     id: 2,
@@ -264,7 +264,7 @@ const recipeData = {
     calories: 480,
     cookTime: "35 minutes",
     prepTime: "15 minutes",
-    author: "Chef Sameer"
+    author: "Chef Sufyan"
   },
   {
     id: 3,
@@ -1178,7 +1178,6 @@ export default class Recipes extends Component {
             className="recipes-search-input"
           />
           <button className="recipes-search-btn">
-            <span className="search-icon">🔍</span>
             Search
           </button>
         </div>
@@ -1221,7 +1220,7 @@ export default class Recipes extends Component {
                     className="recipe-view-btn"
                     onClick={() => this.handleViewRecipe(recipe)}
                   >
-                    👁️ View Recipe
+                     View Recipe
                   </button>
                 </div>
               </div>
@@ -1340,7 +1339,7 @@ export default class Recipes extends Component {
                   className="modal-action-btn save-btn"
                   onClick={() => alert(`Saved ${selectedRecipe.name} to your collection!`)}
                 >
-                  💾 Save
+                   Save
                 </button>
               </div>
             </div>

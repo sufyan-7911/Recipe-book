@@ -5,7 +5,7 @@ export default class About extends Component {
   render() {
     return (
       <div className="about-container">
-        <h1>🍽️ About Recipe Book</h1>
+        <h1>About Recipe Book</h1>
         <p>Your Kitchen Companion</p>
         <div>
           <h2>Our Story</h2>
@@ -14,11 +14,11 @@ export default class About extends Component {
         <div>
           <h2>What We Offer</h2>
           <ul className='hh'>
-            <li>🥗 1000+ Recipes</li>
-            <li>👨‍🍳 Step-by-Step Instructions</li>
-            <li>⏱️ Quick & Easy Meals</li>
-            <li>🌎 Global Cuisine</li>
-            <li>📱 Mobile-Friendly</li>
+            <li> 1000+ Recipes</li>
+            <li> Step-by-Step Instructions</li>
+            <li> Quick & Easy Meals</li>
+            <li> Global Cuisine</li>
+            <li> Mobile-Friendly</li>
           </ul>
         </div>
         <div>
